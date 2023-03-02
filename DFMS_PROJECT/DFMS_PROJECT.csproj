@@ -62,6 +62,12 @@
     <Compile Include="COWS.Designer.cs">
       <DependentUpon>COWS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Health.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Health.Designer.cs">
+      <DependentUpon>Health.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
