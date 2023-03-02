@@ -375,14 +375,14 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.SystemColors.Control;
+            this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label13.Location = new System.Drawing.Point(730, 443);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(185, 44);
+            this.label13.Size = new System.Drawing.Size(213, 44);
             this.label13.TabIndex = 57;
-            this.label13.Text = "COW LIST";
+            this.label13.Text = "DAILY MILK";
             // 
             // dataGridView1
             // 
