@@ -26,5 +26,10 @@ namespace DFMS_PROJECT
         {
 
         }
+
+        private void COWS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
