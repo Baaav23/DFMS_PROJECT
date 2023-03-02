@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DFMS_PROJECT
 {
-    public partial class Form1 : Form
+    public partial class COWS : Form
     {
-        public Form1()
+        public COWS()
         {
             InitializeComponent();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
