@@ -433,9 +433,9 @@
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(978, 264);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 24);
+            this.label10.Size = new System.Drawing.Size(92, 24);
             this.label10.TabIndex = 52;
-            this.label10.Text = "WEIGHT atbirth";
+            this.label10.Text = " PM MILK";
             // 
             // textBox6
             // 
