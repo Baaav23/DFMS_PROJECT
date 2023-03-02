@@ -16,5 +16,10 @@ namespace DFMS_PROJECT
         {
             InitializeComponent();
         }
+
+        private void MILK_PRODUCTION_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
