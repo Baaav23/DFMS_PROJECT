@@ -530,9 +530,9 @@
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(1106, 154);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 24);
+            this.label8.Size = new System.Drawing.Size(112, 24);
             this.label8.TabIndex = 48;
-            this.label8.Text = "BREED";
+            this.label8.Text = "DIAGNOSIS";
             // 
             // textBox4
             // 
@@ -548,9 +548,9 @@
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(877, 154);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 24);
+            this.label7.Size = new System.Drawing.Size(69, 24);
             this.label7.TabIndex = 46;
-            this.label7.Text = "COLOR";
+            this.label7.Text = "EVENT";
             // 
             // textBox3
             // 
@@ -566,8 +566,9 @@
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(643, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 24);
+            this.label3.Size = new System.Drawing.Size(111, 24);
             this.label3.TabIndex = 44;
+            this.label3.Text = "COW NAME";
             // 
             // textBox2
             // 
