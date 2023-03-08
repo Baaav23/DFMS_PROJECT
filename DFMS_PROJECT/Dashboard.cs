@@ -79,5 +79,26 @@ namespace DFMS_PROJECT
             Ob.Show();
             this.Hide();
         }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+            breeding Ob = new breeding();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            breeding Ob = new breeding();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            breeding Ob = new breeding();
+            Ob.Show();
+            this.Hide();
+        }
     }
 }

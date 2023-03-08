@@ -109,6 +109,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // panel5
             // 
@@ -224,6 +225,7 @@
             this.label14.Size = new System.Drawing.Size(123, 27);
             this.label14.TabIndex = 9;
             this.label14.Text = "BREEDING";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label20
             // 
@@ -418,6 +420,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(333, 64);
             this.panel6.TabIndex = 16;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // label19
             // 
