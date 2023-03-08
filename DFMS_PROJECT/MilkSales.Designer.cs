@@ -544,9 +544,9 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(451, 274);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 24);
+            this.label2.Size = new System.Drawing.Size(144, 24);
             this.label2.TabIndex = 42;
-            this.label2.Text = "COW NAME";
+            this.label2.Text = "CLIENT PHONE";
             // 
             // textBox1
             // 
