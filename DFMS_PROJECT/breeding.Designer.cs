@@ -115,7 +115,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.label4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(105, 16);
@@ -281,6 +281,7 @@
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel6.Controls.Add(this.pictureBox4);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Location = new System.Drawing.Point(0, 423);
@@ -301,7 +302,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(105, 16);
@@ -340,7 +341,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(0, 174);
@@ -515,9 +516,9 @@
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(1106, 154);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 24);
+            this.label8.Size = new System.Drawing.Size(111, 24);
             this.label8.TabIndex = 48;
-            this.label8.Text = "BREED";
+            this.label8.Text = "COW NAME";
             // 
             // textBox4
             // 
@@ -535,7 +536,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 24);
             this.label7.TabIndex = 46;
-            this.label7.Text = "COLOR";
+            this.label7.Text = "cow ID";
             // 
             // label3
             // 
@@ -543,9 +544,9 @@
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(643, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 24);
+            this.label3.Size = new System.Drawing.Size(107, 24);
             this.label3.TabIndex = 44;
-            this.label3.Text = "EAR  TAG";
+            this.label3.Text = "breed date";
             // 
             // label2
             // 
