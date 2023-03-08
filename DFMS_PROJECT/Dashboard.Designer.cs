@@ -357,6 +357,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(330, 64);
             this.panel8.TabIndex = 16;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // pictureBox6
             // 
@@ -367,6 +368,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 15;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label16
             // 
@@ -379,6 +381,7 @@
             this.label16.Size = new System.Drawing.Size(111, 27);
             this.label16.TabIndex = 9;
             this.label16.Text = "FINANCE";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel7
             // 

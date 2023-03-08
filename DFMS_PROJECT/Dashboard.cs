@@ -121,5 +121,26 @@ namespace DFMS_PROJECT
             Ob.Show();
             this.Hide();
         }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+            Finance Ob = new Finance();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            Finance Ob = new Finance();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Finance Ob = new Finance();
+            Ob.Show();
+            this.Hide();
+        }
     }
 }
