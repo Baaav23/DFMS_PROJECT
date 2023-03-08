@@ -456,9 +456,9 @@
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(989, 275);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 24);
+            this.label9.Size = new System.Drawing.Size(102, 24);
             this.label9.TabIndex = 55;
-            this.label9.Text = "pasture";
+            this.label9.Text = "VET NAME";
             // 
             // textBox5
             // 
