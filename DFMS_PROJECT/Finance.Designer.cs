@@ -71,6 +71,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -464,6 +465,7 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.button5);
             this.panel10.Controls.Add(this.comboBox1);
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.textBox2);
@@ -542,6 +544,18 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 32);
             this.comboBox1.TabIndex = 95;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(18, 359);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(200, 50);
+            this.button5.TabIndex = 96;
+            this.button5.Text = "SAVE";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // Finance
             // 
@@ -639,5 +653,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button5;
     }
 }
