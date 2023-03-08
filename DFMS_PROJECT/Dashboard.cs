@@ -58,5 +58,26 @@ namespace DFMS_PROJECT
             Ob.Show();
             this.Hide();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Health Ob = new Health();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Health Ob = new Health();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+            Health Ob = new Health();
+            Ob.Show();
+            this.Hide();
+        }
     }
 }
