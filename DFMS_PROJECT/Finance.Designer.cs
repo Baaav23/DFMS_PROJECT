@@ -78,6 +78,8 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -493,11 +495,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(412, 48);
+            this.dataGridView1.Location = new System.Drawing.Point(274, 48);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(515, 297);
+            this.dataGridView1.Size = new System.Drawing.Size(653, 297);
             this.dataGridView1.TabIndex = 97;
             // 
             // label7
@@ -506,7 +508,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(602, 13);
+            this.label7.Location = new System.Drawing.Point(527, 13);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(175, 27);
             this.label7.TabIndex = 94;
@@ -514,6 +516,8 @@
             // 
             // panel11
             // 
+            this.panel11.Controls.Add(this.label21);
+            this.panel11.Controls.Add(this.dateTimePicker3);
             this.panel11.Controls.Add(this.label8);
             this.panel11.Controls.Add(this.dataGridView2);
             this.panel11.Controls.Add(this.button1);
@@ -535,21 +539,21 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(602, 13);
+            this.label8.Location = new System.Drawing.Point(541, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(175, 27);
+            this.label8.Size = new System.Drawing.Size(134, 27);
             this.label8.TabIndex = 94;
-            this.label8.Text = "Expendture list";
+            this.label8.Text = "Income list";
             // 
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(412, 48);
+            this.dataGridView2.Location = new System.Drawing.Point(274, 97);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 26;
-            this.dataGridView2.Size = new System.Drawing.Size(515, 297);
+            this.dataGridView2.Size = new System.Drawing.Size(653, 248);
             this.dataGridView2.TabIndex = 97;
             // 
             // button1
@@ -579,9 +583,9 @@
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(14, 215);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 24);
+            this.label10.Size = new System.Drawing.Size(78, 24);
             this.label10.TabIndex = 94;
-            this.label10.Text = "Event";
+            this.label10.Text = "amount";
             // 
             // textBox1
             // 
@@ -597,9 +601,9 @@
             this.label11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(14, 132);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(81, 24);
+            this.label11.Size = new System.Drawing.Size(54, 24);
             this.label11.TabIndex = 92;
-            this.label11.Text = "perpuse";
+            this.label11.Text = "Type";
             // 
             // dateTimePicker2
             // 
@@ -615,9 +619,9 @@
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(14, 51);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(157, 24);
+            this.label13.Size = new System.Drawing.Size(129, 24);
             this.label13.TabIndex = 89;
-            this.label13.Text = "pregnancy DATE";
+            this.label13.Text = "income DATE";
             // 
             // label20
             // 
@@ -627,9 +631,27 @@
             this.label20.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label20.Location = new System.Drawing.Point(13, 13);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(149, 27);
+            this.label20.Size = new System.Drawing.Size(99, 27);
             this.label20.TabIndex = 88;
-            this.label20.Text = "Expendtures";
+            this.label20.Text = "Income";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker3.Location = new System.Drawing.Point(546, 59);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(200, 32);
+            this.dateTimePicker3.TabIndex = 98;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(474, 59);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(66, 24);
+            this.label21.TabIndex = 99;
+            this.label21.Text = "Filteer";
             // 
             // Finance
             // 
@@ -733,5 +755,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }
