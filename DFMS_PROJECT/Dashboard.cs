@@ -142,5 +142,26 @@ namespace DFMS_PROJECT
             Ob.Show();
             this.Hide();
         }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+            Dashboard Ob = new Dashboard();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Dashboard Ob = new Dashboard();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Dashboard Ob = new Dashboard();
+            Ob.Show();
+            this.Hide();
+        }
     }
 }

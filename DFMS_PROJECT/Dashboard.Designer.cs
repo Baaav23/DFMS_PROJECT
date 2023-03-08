@@ -326,6 +326,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(333, 64);
             this.panel9.TabIndex = 16;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // pictureBox7
             // 
@@ -336,6 +337,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // label17
             // 
@@ -348,6 +350,7 @@
             this.label17.Size = new System.Drawing.Size(167, 27);
             this.label17.TabIndex = 9;
             this.label17.Text = "DASHBBOARD";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // panel8
             // 
