@@ -100,6 +100,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="breeding.resx">
+      <DependentUpon>breeding.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="COWS.resx">
       <DependentUpon>COWS.cs</DependentUpon>
     </EmbeddedResource>
