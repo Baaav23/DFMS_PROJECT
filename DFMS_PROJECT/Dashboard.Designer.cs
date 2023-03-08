@@ -149,6 +149,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(329, 64);
             this.panel4.TabIndex = 16;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // pictureBox2
             // 
@@ -159,6 +160,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label5
             // 
@@ -171,6 +173,7 @@
             this.label5.Size = new System.Drawing.Size(226, 27);
             this.label5.TabIndex = 9;
             this.label5.Text = "MILK PRODUCTION";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel3
             // 
