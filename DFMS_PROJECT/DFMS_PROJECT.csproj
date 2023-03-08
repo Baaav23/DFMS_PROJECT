@@ -106,6 +106,9 @@
     <EmbeddedResource Include="MILK PRODUCTION.resx">
       <DependentUpon>MILK PRODUCTION.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MilkSales.resx">
+      <DependentUpon>MilkSales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
