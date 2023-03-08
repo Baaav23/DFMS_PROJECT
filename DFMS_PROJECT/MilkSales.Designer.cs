@@ -361,9 +361,9 @@
             this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label19.Location = new System.Drawing.Point(841, 92);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(74, 27);
+            this.label19.Size = new System.Drawing.Size(122, 27);
             this.label19.TabIndex = 63;
-            this.label19.Text = "COW";
+            this.label19.Text = "Milk Sales";
             // 
             // button3
             // 
@@ -409,9 +409,9 @@
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label13.Location = new System.Drawing.Point(730, 443);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(185, 44);
+            this.label13.Size = new System.Drawing.Size(178, 44);
             this.label13.TabIndex = 58;
-            this.label13.Text = "COW LIST";
+            this.label13.Text = "Sales LIST";
             // 
             // dataGridView1
             // 
