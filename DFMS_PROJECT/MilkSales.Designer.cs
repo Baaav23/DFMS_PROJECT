@@ -526,9 +526,9 @@
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(768, 146);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 24);
+            this.label3.Size = new System.Drawing.Size(53, 24);
             this.label3.TabIndex = 44;
-            this.label3.Text = "EAR  TAG";
+            this.label3.Text = "Price";
             // 
             // textBox2
             // 
