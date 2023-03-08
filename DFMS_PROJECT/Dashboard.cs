@@ -100,5 +100,26 @@ namespace DFMS_PROJECT
             Ob.Show();
             this.Hide();
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            MilkSales Ob = new MilkSales();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+            MilkSales Ob = new MilkSales();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            MilkSales Ob = new MilkSales();
+            Ob.Show();
+            this.Hide();
+        }
     }
 }
