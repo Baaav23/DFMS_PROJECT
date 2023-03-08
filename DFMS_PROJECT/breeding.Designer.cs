@@ -610,7 +610,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(593, 361);
+            this.label20.Location = new System.Drawing.Point(675, 361);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(93, 24);
             this.label20.TabIndex = 69;
@@ -620,7 +620,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(709, 353);
+            this.textBox1.Location = new System.Drawing.Point(791, 353);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(205, 53);
