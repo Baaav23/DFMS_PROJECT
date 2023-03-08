@@ -462,9 +462,9 @@
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(1065, 277);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 24);
+            this.label10.Size = new System.Drawing.Size(56, 24);
             this.label10.TabIndex = 53;
-            this.label10.Text = "WEIGHT atbirth";
+            this.label10.Text = "Total";
             // 
             // textBox6
             // 
