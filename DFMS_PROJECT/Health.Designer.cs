@@ -101,7 +101,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(105, 16);
@@ -113,7 +113,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.label4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(105, 16);
@@ -310,6 +310,7 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(3, 342);
@@ -338,7 +339,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(0, 174);
@@ -362,11 +363,11 @@
             this.label19.BackColor = System.Drawing.Color.White;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label19.Location = new System.Drawing.Point(841, 92);
+            this.label19.Location = new System.Drawing.Point(783, 92);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(74, 27);
+            this.label19.Size = new System.Drawing.Size(186, 27);
             this.label19.TabIndex = 63;
-            this.label19.Text = "COW";
+            this.label19.Text = "HEALTH REPORT";
             // 
             // button3
             // 
@@ -441,7 +442,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(485, 12);
+            this.label1.Location = new System.Drawing.Point(468, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 44);
             this.label1.TabIndex = 14;
@@ -565,9 +566,8 @@
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(643, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 24);
+            this.label3.Size = new System.Drawing.Size(0, 24);
             this.label3.TabIndex = 44;
-            this.label3.Text = "EAR  TAG";
             // 
             // textBox2
             // 
@@ -583,9 +583,9 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(407, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 24);
+            this.label2.Size = new System.Drawing.Size(81, 24);
             this.label2.TabIndex = 42;
-            this.label2.Text = "COW NAME";
+            this.label2.Text = "COW ID";
             // 
             // textBox1
             // 
