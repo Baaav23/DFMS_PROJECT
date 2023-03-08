@@ -30,5 +30,12 @@ namespace DFMS_PROJECT
             Ob.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            COWS Ob = new COWS();
+            Ob.Show();
+            this.Hide();
+        }
     }
 }
