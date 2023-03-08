@@ -16,5 +16,12 @@ namespace DFMS_PROJECT
         {
             InitializeComponent();
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            COWS Ob = new COWS();
+            Ob.Show();
+            this.Hide();
+        }
     }
 }
