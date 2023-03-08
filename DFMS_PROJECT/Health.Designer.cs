@@ -474,9 +474,9 @@
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(760, 275);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 24);
+            this.label10.Size = new System.Drawing.Size(205, 24);
             this.label10.TabIndex = 53;
-            this.label10.Text = "WEIGHT atbirth";
+            this.label10.Text = "COST OF TREATMENT";
             // 
             // textBox6
             // 
@@ -492,9 +492,9 @@
             this.label11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(526, 275);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 24);
+            this.label11.Size = new System.Drawing.Size(120, 24);
             this.label11.TabIndex = 51;
-            this.label11.Text = "AGE";
+            this.label11.Text = "TREATMENT";
             // 
             // textBox7
             // 
