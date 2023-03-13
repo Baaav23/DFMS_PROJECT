@@ -182,7 +182,10 @@ namespace DFMS_PROJECT
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (CowNameTb.Text == "" || EarTagTb.Text == ""|| ColorTb.Text==""||BreedTb.Text==""||AgeTb.Text==""||AgeTb.Text==""||PasTureTb.Text=="")
+            {
+                MessageBox.Show("Mmissing Data");
+            }
         }
     }
 }

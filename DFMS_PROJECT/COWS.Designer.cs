@@ -42,9 +42,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.PasTureTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.WeigthTb = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.AgeTb = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.DOBDate = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -219,13 +219,13 @@
             this.label10.Text = "WEIGHT atbirth";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // textBox6
+            // WeigthTb
             // 
-            this.textBox6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(882, 321);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(205, 32);
-            this.textBox6.TabIndex = 27;
+            this.WeigthTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeigthTb.Location = new System.Drawing.Point(882, 321);
+            this.WeigthTb.Name = "WeigthTb";
+            this.WeigthTb.Size = new System.Drawing.Size(205, 32);
+            this.WeigthTb.TabIndex = 27;
             // 
             // label11
             // 
@@ -237,13 +237,13 @@
             this.label11.TabIndex = 26;
             this.label11.Text = "AGE";
             // 
-            // WeigthTb
+            // AgeTb
             // 
-            this.WeigthTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeigthTb.Location = new System.Drawing.Point(648, 321);
-            this.WeigthTb.Name = "WeigthTb";
-            this.WeigthTb.Size = new System.Drawing.Size(205, 32);
-            this.WeigthTb.TabIndex = 25;
+            this.AgeTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeTb.Location = new System.Drawing.Point(648, 321);
+            this.AgeTb.Name = "AgeTb";
+            this.AgeTb.Size = new System.Drawing.Size(205, 32);
+            this.AgeTb.TabIndex = 25;
             // 
             // label12
             // 
@@ -644,9 +644,9 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.PasTureTb);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.WeigthTb);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.AgeTb);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.BreedTb);
@@ -709,9 +709,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox PasTureTb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox WeigthTb;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox AgeTb;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker DOBDate;
         private System.Windows.Forms.DataGridView dataGridView1;
