@@ -220,8 +220,11 @@ namespace DFMS_PROJECT
             {
                 try
                 {
-                    Con.Open();
-                    string Query = "insert into CowTbl values('"+CowNameTb.Text+"','"+EarTagTb.Text+"','"+ColorTb.Text+"','"+BreedTb.Text+"','"++"')";
+                    String Query = "insert into CowTbl values('" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreedTb.Text + "'," + AgeTb + "," + Convert.ToInt32(WeigthTb.Text) + ",'" + PasTureTb.Text + "')";
+                    Con.SetData(Query);
+                    ShowCows();
+                    Clear();
+                    MessageBox.Show("Cow Added!!!");
                 }
                 catch (Exception ex)
                 {
