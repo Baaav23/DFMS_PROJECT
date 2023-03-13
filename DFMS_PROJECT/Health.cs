@@ -18,7 +18,7 @@ namespace DFMS_PROJECT
         {
             InitializeComponent();
         }
-        SqlConnection COn = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Bavly Badry\OneDrive\Documents\DFMS.mdf;Integrated Security = True; Connect Timeout = 30");
+        SqlConnection Con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Bavly Badry\OneDrive\Documents\DFMS.mdf;Integrated Security = True; Connect Timeout = 30");
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
