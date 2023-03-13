@@ -168,5 +168,10 @@ namespace DFMS_PROJECT
             Ob.Show();
             this.Hide();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

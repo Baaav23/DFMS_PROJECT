@@ -163,5 +163,10 @@ namespace DFMS_PROJECT
             Ob.Show();
             this.Hide();
         }
+
+        private void dateTimePicker4_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
