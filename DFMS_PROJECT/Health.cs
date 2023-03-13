@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace DFMS_PROJECT
 {
@@ -168,6 +170,11 @@ namespace DFMS_PROJECT
             Finance Ob = new Finance();
             Ob.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
