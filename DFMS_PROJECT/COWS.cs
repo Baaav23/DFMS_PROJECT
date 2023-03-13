@@ -288,5 +288,29 @@ namespace DFMS_PROJECT
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (CowNameTb.Text == "" || EarTagTb.Text == "" || ColorTb.Text == "" || BreedTb.Text == "" || AgeTb.Text == "" || WeigthTb.Text == "" || PasTureTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "Update CowTbl set CowName = '" + CowNameTb.Text + "',EarTag = '" + EarTagTb.Text + "',Color = '" + ColorTb.Text + "',Breed = '" + BreedTb.Text + "',Age = " + AgeTb + ",WeigtAtBirth = " + Convert.ToInt32(WeigthTb.Text) + ",Pasture = '" + PasTureTb.Text + "'  where CowId = " + key + "";
+                    Con.SetData(Query);
+                    ShowCows();
+                    Clear();
+                    MessageBox.Show("Cow Edited!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
