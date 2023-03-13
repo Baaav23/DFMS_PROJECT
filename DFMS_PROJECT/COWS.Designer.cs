@@ -47,7 +47,7 @@
             this.AgeTb = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.DOBDate = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CowGV = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -79,7 +79,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CowGV)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -262,17 +262,19 @@
             this.DOBDate.Name = "DOBDate";
             this.DOBDate.Size = new System.Drawing.Size(200, 32);
             this.DOBDate.TabIndex = 31;
+            this.DOBDate.ValueChanged += new System.EventHandler(this.DOBDate_ValueChanged);
             // 
-            // dataGridView1
+            // CowGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(365, 501);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(951, 292);
-            this.dataGridView1.TabIndex = 32;
+            this.CowGV.BackgroundColor = System.Drawing.Color.White;
+            this.CowGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CowGV.Location = new System.Drawing.Point(365, 501);
+            this.CowGV.Name = "CowGV";
+            this.CowGV.RowHeadersWidth = 51;
+            this.CowGV.RowTemplate.Height = 26;
+            this.CowGV.Size = new System.Drawing.Size(951, 292);
+            this.CowGV.TabIndex = 32;
+            this.CowGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label13
             // 
@@ -332,8 +334,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(114, 50);
             this.button4.TabIndex = 37;
-            this.button4.Text = "UPDATE";
+            this.button4.Text = "CLEAR";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel3
             // 
@@ -639,7 +642,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CowGV);
             this.Controls.Add(this.DOBDate);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.PasTureTb);
@@ -665,7 +668,7 @@
             this.Load += new System.EventHandler(this.COWS_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CowGV)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -714,7 +717,7 @@
         private System.Windows.Forms.TextBox AgeTb;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker DOBDate;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CowGV;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

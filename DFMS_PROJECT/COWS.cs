@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cow_Farm_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,19 +7,45 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using TheArtOfDevHtmlRenderer.Adapters.Entities;
 
 
 namespace DFMS_PROJECT
 {
     public partial class COWS : Form
     {
+        Functions Con;
+        int key = 0;
+        int age = 0;
         public COWS()
         {
             InitializeComponent();
+            Con = new Functions();
+            ShowCows();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Bavly Badry\OneDrive\Documents\DFMS.mdf;Integrated Security = True; Connect Timeout = 30");
+        private void ShowCows()
+        {
+            String Query = "Select * from CowTbl";
+            CowGV.DataSource = Con.GetData(Query);
+        }
+        private void Clear()
+        {
+            age = 0;
+            DOBDate.Value = DateTime.Today.Date;
+            CowNameTb.Text = "";
+            EarTagTb.Text = "";
+            ColorTb.Text = "";
+            BreedTb.Text = "";
+            AgeTb.Text = age.ToString();
+            WeigthTb.Text = "";
+            PasTureTb.Text = "";
+            key = 0;
+        }
 
 
         private void label10_Click(object sender, EventArgs e)
@@ -201,6 +228,22 @@ namespace DFMS_PROJECT
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
+        private void DOBDate_ValueChanged(object sender, EventArgs e)
+        {
+            age = Convert.ToInt32((DateTime.Today.Date - DOBDate.Value.Date).Days) / 365;
+            DOBDate.Text = age.ToString();
         }
     }
 }
