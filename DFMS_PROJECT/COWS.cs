@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace DFMS_PROJECT
 {
     public partial class COWS : Form
@@ -177,6 +178,11 @@ namespace DFMS_PROJECT
             Dashboard Ob = new Dashboard();
             Ob.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
