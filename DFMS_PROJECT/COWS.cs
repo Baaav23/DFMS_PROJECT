@@ -264,5 +264,29 @@ namespace DFMS_PROJECT
             age = Convert.ToInt32((DateTime.Today.Date - DOBDate.Value.Date).Days) / 365;
             DOBDate.Text = age.ToString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Please Sellect a Cow!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "Delete from CowTbl where CowId = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    ShowCows();
+                    Clear();
+                    MessageBox.Show("Cow Deleted!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
