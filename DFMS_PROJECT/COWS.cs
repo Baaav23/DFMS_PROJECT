@@ -235,7 +235,23 @@ namespace DFMS_PROJECT
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            CowNameTb.Text = CowGV.SelectedRows[0].Cells[1].Value.ToString();
+            EarTagTb.Text = CowGV.SelectedRows[0].Cells[2].Value.ToString();
+            ColorTb.Text = CowGV.SelectedRows[0].Cells[3].Value.ToString();
+            BreedTb.Text = CowGV.SelectedRows[0].Cells[4].Value.ToString();
+            AgeTb.Text = CowGV.SelectedRows[0].Cells[5].Value.ToString();
+            WeigthTb.Text = CowGV.SelectedRows[0].Cells[6].Value.ToString();
+            PasTureTb.Text = CowGV.SelectedRows[0].Cells[7].Value.ToString();
+            //age = Convert.ToInt32(CAge.Text);
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(CowGV.SelectedRows[0].Cells[0].Value.ToString());
+                age = Convert.ToInt32(CowGV.SelectedRows[0].Cells[5].Value.ToString());
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
