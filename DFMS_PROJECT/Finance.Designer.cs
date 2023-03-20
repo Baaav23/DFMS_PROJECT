@@ -747,6 +747,7 @@
             this.IncRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.IncRef.TabIndex = 100;
             this.IncRef.TabStop = false;
+            this.IncRef.Click += new System.EventHandler(this.IncRef_Click);
             // 
             // Finance
             // 

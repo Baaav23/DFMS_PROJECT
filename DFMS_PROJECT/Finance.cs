@@ -268,5 +268,10 @@ namespace DFMS_PROJECT
                 }
             }
         }
+
+        private void IncRef_Click(object sender, EventArgs e)
+        {
+            showInc();
+        }
     }
 }
