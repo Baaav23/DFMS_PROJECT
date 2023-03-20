@@ -201,12 +201,50 @@ namespace DFMS_PROJECT
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (CowNameTb.Text == "" || CowIDTb.SelectedIndex == -1 || EventTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "insert into HealthTbl values('" + CowIDTb.SelectedValue.ToString() + "','" + CowNameTb.Text + "','" + HDDate.Value.Date.ToShortDateString() + "','" + EventTb.Text + "','" + DiagnosisTb.Text + "','" + TreatmentTb.Text + "', " + CostTb.Text + ", '" + VetNameTb.Text + "')";
+                    Con.SetData(Query);
+                    showHealth();
+                    Clear();
+                    MessageBox.Show("Health Report Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void Health_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void HealthListTb_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CowIDTb.SelectedValue = HealthListTb.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = HealthListTb.SelectedRows[0].Cells[2].Value.ToString();
+            HDDate.Text = HealthListTb.SelectedRows[0].Cells[3].Value.ToString();
+            EventTb.Text = HealthListTb.SelectedRows[0].Cells[4].Value.ToString();
+            DiagnosisTb.Text = HealthListTb.SelectedRows[0].Cells[5].Value.ToString();
+            TreatmentTb.Text = HealthListTb.SelectedRows[0].Cells[6].Value.ToString();
+            CostTb.Text = HealthListTb.SelectedRows[0].Cells[7].Value.ToString();
+            VetNameTb.Text = HealthListTb.SelectedRows[0].Cells[8].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(HealthListTb.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }

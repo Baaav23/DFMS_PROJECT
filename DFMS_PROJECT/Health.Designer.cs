@@ -449,6 +449,7 @@
             this.HealthListTb.RowTemplate.Height = 26;
             this.HealthListTb.Size = new System.Drawing.Size(951, 292);
             this.HealthListTb.TabIndex = 57;
+            this.HealthListTb.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HealthListTb_CellContentClick);
             // 
             // label1
             // 
