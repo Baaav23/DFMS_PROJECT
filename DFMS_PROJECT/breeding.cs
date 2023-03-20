@@ -285,5 +285,27 @@ namespace DFMS_PROJECT
                 }
             }
         }
+
+        private void CowListTb_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            HeateDateTb.Text = CowListTb.SelectedRows[0].Cells[1].Value.ToString();
+            BreedDateTb.Text = CowListTb.SelectedRows[0].Cells[2].Value.ToString();
+            CowIdTb.SelectedValue = CowListTb.SelectedRows[0].Cells[3].Value.ToString();
+            CowNameTb.Text = CowListTb.SelectedRows[0].Cells[4].Value.ToString();
+            PregnancyDateTb.Text = CowListTb.SelectedRows[0].Cells[5].Value.ToString();
+            ExpectDateTb.Text = CowListTb.SelectedRows[0].Cells[6].Value.ToString();
+            DateCalvedTb.Text = CowListTb.SelectedRows[0].Cells[7].Value.ToString();
+            CowAgeTb.Text = CowListTb.SelectedRows[0].Cells[8].Value.ToString();
+            RemarkesTb.Text = CowListTb.SelectedRows[0].Cells[9].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+                key = Convert.ToInt32(CowListTb.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }

@@ -453,6 +453,7 @@
             this.CowListTb.RowTemplate.Height = 26;
             this.CowListTb.Size = new System.Drawing.Size(951, 292);
             this.CowListTb.TabIndex = 57;
+            this.CowListTb.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CowListTb_CellContentClick);
             // 
             // PregnancyDateTb
             // 
