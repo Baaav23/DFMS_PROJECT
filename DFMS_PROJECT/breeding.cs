@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Cow_Farm_System;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +9,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace DFMS_PROJECT
 {
     public partial class breeding : Form
     {
+        Functions Con;
+        int key = 0;
         public breeding()
         {
             InitializeComponent();
+            Con = new Functions();
+            showBreading();
+            getCowId();
+        }
+        private void showBreading()
+        {
+            String Query = "Select * from BreedTbl";
+            CowListTb.DataSource = Con.GetData(Query);
+        }
+
+        private void getCowId()
+        {
+            string Query = "Select CowId from CowTbl";
+            CowIdTb.ValueMember = "CowId";
+            CowIdTb.DataSource = Con.GetData(Query);
+        }
+        private void getCowName()
+        {
+            string Query = "Select * from CowTbl where CowId=" +CowIdTb.SelectedValue + "";
+            foreach (DataRow dr in Con.GetData(Query).Rows)
+            {
+                CowNameTb.Text = dr["CowName"].ToString();
+                CowAgeTb.Text = dr["Age"].ToString();
+            }
+        }
+        private void Clear()
+        {
+            HeateDateTb.Value = DateTime.Today.Date;
+            PregnancyDateTb.Value = DateTime.Today.Date;
+            ExpectDateTb.Value = DateTime.Today.Date;
+            DateCalvedTb.Value = DateTime.Today.Date;
+            BreedDateTb.Value = DateTime.Today.Date;
+            CowNameTb.Text = "";
+            CowAgeTb.Text = "";
+            RemarkesTb.Text = "";
+            key = 0;
         }
 
         private void label20_Click(object sender, EventArgs e)
@@ -163,6 +204,39 @@ namespace DFMS_PROJECT
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (CowIdTb.SelectedIndex == -1 || CowNameTb.Text == "" || CowAgeTb.Text == "" || RemarkesTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "insert into BreedTbl values('" + HeateDateTb.Value.Date.ToShortDateString() + "','" + BreedDateTb.Value.Date.ToShortDateString() + "'," + Convert.ToInt32(CowIdTb.SelectedValue.ToString()) + ",'" + CowNameTb.Text + "','" + PregnancyDateTb.Value.Date.ToShortDateString() + "','" + ExpectDateTb.Value.Date.ToShortDateString() + "', '" + DateCalvedTb.Value.Date.ToShortDateString() + "', " + Convert.ToInt32(CowAgeTb.Text) + ", '" + RemarkesTb.Text + "')";
+                    Con.SetData(Query);
+                    showBreading();
+                    Clear();
+                    MessageBox.Show("Breading Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void CowIdTb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            getCowName();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }
