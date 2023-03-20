@@ -57,6 +57,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.ExRef = new System.Windows.Forms.PictureBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.FExFilter = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.ExpenListTb = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
@@ -68,6 +71,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.IncRef = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.FilterTb = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -81,10 +85,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.EmpTemp = new System.Windows.Forms.Label();
-            this.ExRef = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.FExFilter = new System.Windows.Forms.DateTimePicker();
-            this.IncRef = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -103,11 +103,11 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpenListTb)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IncomeListTb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IncRef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IncomeListTb)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -232,6 +232,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(336, 860);
             this.panel1.TabIndex = 65;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox8
             // 
@@ -443,6 +444,43 @@
             this.panel10.Size = new System.Drawing.Size(937, 354);
             this.panel10.TabIndex = 93;
             // 
+            // ExRef
+            // 
+            this.ExRef.Image = ((System.Drawing.Image)(resources.GetObject("ExRef.Image")));
+            this.ExRef.Location = new System.Drawing.Point(886, 8);
+            this.ExRef.Margin = new System.Windows.Forms.Padding(4);
+            this.ExRef.Name = "ExRef";
+            this.ExRef.Size = new System.Drawing.Size(48, 41);
+            this.ExRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ExRef.TabIndex = 100;
+            this.ExRef.TabStop = false;
+            this.ExRef.Click += new System.EventHandler(this.ExRef_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label22.Location = new System.Drawing.Point(577, 12);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(66, 28);
+            this.label22.TabIndex = 99;
+            this.label22.Text = "Filter";
+            // 
+            // FExFilter
+            // 
+            this.FExFilter.CustomFormat = "yyyy-MM-dd";
+            this.FExFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.FExFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FExFilter.Location = new System.Drawing.Point(651, 7);
+            this.FExFilter.Margin = new System.Windows.Forms.Padding(4);
+            this.FExFilter.Name = "FExFilter";
+            this.FExFilter.Size = new System.Drawing.Size(233, 40);
+            this.FExFilter.TabIndex = 98;
+            this.FExFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            this.FExFilter.ValueChanged += new System.EventHandler(this.FExFilter_ValueChanged);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -565,6 +603,18 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(937, 354);
             this.panel11.TabIndex = 98;
+            // 
+            // IncRef
+            // 
+            this.IncRef.Image = ((System.Drawing.Image)(resources.GetObject("IncRef.Image")));
+            this.IncRef.Location = new System.Drawing.Point(836, 51);
+            this.IncRef.Margin = new System.Windows.Forms.Padding(4);
+            this.IncRef.Name = "IncRef";
+            this.IncRef.Size = new System.Drawing.Size(48, 41);
+            this.IncRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IncRef.TabIndex = 100;
+            this.IncRef.TabStop = false;
+            this.IncRef.Click += new System.EventHandler(this.IncRef_Click);
             // 
             // label21
             // 
@@ -700,55 +750,6 @@
             this.EmpTemp.TabIndex = 99;
             this.EmpTemp.Text = "1";
             // 
-            // ExRef
-            // 
-            this.ExRef.Image = ((System.Drawing.Image)(resources.GetObject("ExRef.Image")));
-            this.ExRef.Location = new System.Drawing.Point(886, 8);
-            this.ExRef.Margin = new System.Windows.Forms.Padding(4);
-            this.ExRef.Name = "ExRef";
-            this.ExRef.Size = new System.Drawing.Size(48, 41);
-            this.ExRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ExRef.TabIndex = 100;
-            this.ExRef.TabStop = false;
-            this.ExRef.Click += new System.EventHandler(this.ExRef_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label22.Location = new System.Drawing.Point(577, 12);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(66, 28);
-            this.label22.TabIndex = 99;
-            this.label22.Text = "Filter";
-            // 
-            // FExFilter
-            // 
-            this.FExFilter.CustomFormat = "yyyy-MM-dd";
-            this.FExFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.FExFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FExFilter.Location = new System.Drawing.Point(651, 7);
-            this.FExFilter.Margin = new System.Windows.Forms.Padding(4);
-            this.FExFilter.Name = "FExFilter";
-            this.FExFilter.Size = new System.Drawing.Size(233, 40);
-            this.FExFilter.TabIndex = 98;
-            this.FExFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
-            this.FExFilter.ValueChanged += new System.EventHandler(this.FExFilter_ValueChanged);
-            // 
-            // IncRef
-            // 
-            this.IncRef.Image = ((System.Drawing.Image)(resources.GetObject("IncRef.Image")));
-            this.IncRef.Location = new System.Drawing.Point(836, 51);
-            this.IncRef.Margin = new System.Windows.Forms.Padding(4);
-            this.IncRef.Name = "IncRef";
-            this.IncRef.Size = new System.Drawing.Size(48, 41);
-            this.IncRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.IncRef.TabIndex = 100;
-            this.IncRef.TabStop = false;
-            this.IncRef.Click += new System.EventHandler(this.IncRef_Click);
-            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -793,12 +794,12 @@
             this.panel3.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpenListTb)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IncomeListTb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IncRef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IncomeListTb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
