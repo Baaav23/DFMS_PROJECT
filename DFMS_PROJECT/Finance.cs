@@ -235,5 +235,15 @@ namespace DFMS_PROJECT
             String Query = "Select * from ExpenditureTbl where ExpDate='" + FExFilter.Value.Date.ToShortDateString() + "'";
             ExpenListTb.DataSource = Con.GetData(Query);
         }
+        private void Filterincome()
+        {
+            String Query = "Select * from IncomeTbl where IncDate='" + FInFilter.Value.Date.ToShortDateString() + "'";
+            IncomeListTb.DataSource = Con.GetData(Query);
+        }
+
+        private void FilterTb_ValueChanged(object sender, EventArgs e)
+        {
+            Filterincome();
+        }
     }
 }

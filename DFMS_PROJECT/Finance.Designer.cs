@@ -84,6 +84,7 @@
             this.ExRef = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.FExFilter = new System.Windows.Forms.DateTimePicker();
+            this.IncRef = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -106,6 +107,7 @@
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IncomeListTb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExRef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IncRef)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -546,6 +548,7 @@
             // 
             // panel11
             // 
+            this.panel11.Controls.Add(this.IncRef);
             this.panel11.Controls.Add(this.label21);
             this.panel11.Controls.Add(this.FilterTb);
             this.panel11.Controls.Add(this.label8);
@@ -580,6 +583,7 @@
             this.FilterTb.Name = "FilterTb";
             this.FilterTb.Size = new System.Drawing.Size(200, 32);
             this.FilterTb.TabIndex = 98;
+            this.FilterTb.ValueChanged += new System.EventHandler(this.FilterTb_ValueChanged);
             // 
             // label8
             // 
@@ -732,6 +736,17 @@
             this.FExFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
             this.FExFilter.ValueChanged += new System.EventHandler(this.FExFilter_ValueChanged);
             // 
+            // IncRef
+            // 
+            this.IncRef.Image = ((System.Drawing.Image)(resources.GetObject("IncRef.Image")));
+            this.IncRef.Location = new System.Drawing.Point(836, 59);
+            this.IncRef.Margin = new System.Windows.Forms.Padding(4);
+            this.IncRef.Name = "IncRef";
+            this.IncRef.Size = new System.Drawing.Size(48, 41);
+            this.IncRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IncRef.TabIndex = 100;
+            this.IncRef.TabStop = false;
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -781,6 +796,7 @@
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IncomeListTb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExRef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IncRef)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -842,5 +858,6 @@
         private System.Windows.Forms.PictureBox ExRef;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DateTimePicker FExFilter;
+        private System.Windows.Forms.PictureBox IncRef;
     }
 }
