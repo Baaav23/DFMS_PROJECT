@@ -113,6 +113,7 @@
             this.EList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.EList.Size = new System.Drawing.Size(1035, 401);
             this.EList.TabIndex = 50;
+            this.EList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EList_CellContentClick);
             // 
             // label19
             // 
