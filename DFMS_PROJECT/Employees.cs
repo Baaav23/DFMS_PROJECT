@@ -22,6 +22,17 @@ namespace DFMS_PROJECT
             showEmployees();
 
         }
+        private void Clear()
+        {
+            EDate.Value = DateTime.Today.Date;
+            EName.Text = "";
+            EPass.Text = "";
+            EPhon.Text = "";
+            EAdd.Text = "";
+            EGen.SelectedIndex = -1;
+            key = 0;
+        }
+
         private void showEmployees()
         {
             String Query = "Select * from EmpTbl";
