@@ -172,6 +172,7 @@
             this.EditBtn.TabIndex = 46;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // SaveBtn
             // 
