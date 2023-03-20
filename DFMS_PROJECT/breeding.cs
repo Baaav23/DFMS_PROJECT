@@ -261,5 +261,29 @@ namespace DFMS_PROJECT
                 }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Please Sellect a Breading!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "Delete from BreedTbl where BrId = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    showBreading();
+                    Clear();
+                    MessageBox.Show("Breading Deleted!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
