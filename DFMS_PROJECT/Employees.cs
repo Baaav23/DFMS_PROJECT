@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cow_Farm_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,22 @@ namespace DFMS_PROJECT
 {
     public partial class Employees : Form
     {
+        Functions Con;
+        int key = 0;
         public Employees()
         {
             InitializeComponent();
+
+        }
+        private void showEmployees()
+        {
+            String Query = "Select * from EmpTbl";
+            EList.DataSource = Con.GetData(Query);
+        }
+
+        private void Employees_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -393,6 +393,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employees";
             this.Text = "Employees";
+            this.Load += new System.EventHandler(this.Employees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EList)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
