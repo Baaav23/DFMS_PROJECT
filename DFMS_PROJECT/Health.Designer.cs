@@ -58,24 +58,26 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.HealthListTb = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.VetNameTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.CostTb = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TreatmentTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.DiagnosisTb = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.EventTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CowNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CowIDTb = new System.Windows.Forms.ComboBox();
+            this.HDDate = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -92,7 +94,7 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HealthListTb)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -437,16 +439,16 @@
             this.label13.TabIndex = 58;
             this.label13.Text = "HEALTH REPORT";
             // 
-            // dataGridView1
+            // HealthListTb
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(364, 501);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(951, 292);
-            this.dataGridView1.TabIndex = 57;
+            this.HealthListTb.BackgroundColor = System.Drawing.Color.White;
+            this.HealthListTb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.HealthListTb.Location = new System.Drawing.Point(364, 501);
+            this.HealthListTb.Name = "HealthListTb";
+            this.HealthListTb.RowHeadersWidth = 51;
+            this.HealthListTb.RowTemplate.Height = 26;
+            this.HealthListTb.Size = new System.Drawing.Size(951, 292);
+            this.HealthListTb.TabIndex = 57;
             // 
             // label1
             // 
@@ -469,62 +471,62 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(114, 50);
             this.button4.TabIndex = 62;
-            this.button4.Text = "UPDATE";
+            this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(989, 275);
+            this.label9.Location = new System.Drawing.Point(870, 275);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 24);
             this.label9.TabIndex = 55;
             this.label9.Text = "VET NAME";
             // 
-            // textBox5
+            // VetNameTb
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(993, 314);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(205, 32);
-            this.textBox5.TabIndex = 54;
+            this.VetNameTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VetNameTb.Location = new System.Drawing.Point(874, 314);
+            this.VetNameTb.Name = "VetNameTb";
+            this.VetNameTb.Size = new System.Drawing.Size(205, 32);
+            this.VetNameTb.TabIndex = 54;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(760, 275);
+            this.label10.Location = new System.Drawing.Point(641, 275);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(205, 24);
             this.label10.TabIndex = 53;
             this.label10.Text = "COST OF TREATMENT";
             // 
-            // textBox6
+            // CostTb
             // 
-            this.textBox6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(764, 314);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(205, 32);
-            this.textBox6.TabIndex = 52;
+            this.CostTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CostTb.Location = new System.Drawing.Point(645, 314);
+            this.CostTb.Name = "CostTb";
+            this.CostTb.Size = new System.Drawing.Size(205, 32);
+            this.CostTb.TabIndex = 52;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(526, 275);
+            this.label11.Location = new System.Drawing.Point(407, 275);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(120, 24);
             this.label11.TabIndex = 51;
             this.label11.Text = "TREATMENT";
             // 
-            // textBox7
+            // TreatmentTb
             // 
-            this.textBox7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(530, 314);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(205, 32);
-            this.textBox7.TabIndex = 50;
+            this.TreatmentTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TreatmentTb.Location = new System.Drawing.Point(411, 314);
+            this.TreatmentTb.Name = "TreatmentTb";
+            this.TreatmentTb.Size = new System.Drawing.Size(205, 32);
+            this.TreatmentTb.TabIndex = 50;
             // 
             // label8
             // 
@@ -536,13 +538,13 @@
             this.label8.TabIndex = 48;
             this.label8.Text = "DIAGNOSIS";
             // 
-            // textBox4
+            // DiagnosisTb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(1110, 193);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(205, 32);
-            this.textBox4.TabIndex = 47;
+            this.DiagnosisTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiagnosisTb.Location = new System.Drawing.Point(1110, 193);
+            this.DiagnosisTb.Name = "DiagnosisTb";
+            this.DiagnosisTb.Size = new System.Drawing.Size(205, 32);
+            this.DiagnosisTb.TabIndex = 47;
             // 
             // label7
             // 
@@ -554,13 +556,13 @@
             this.label7.TabIndex = 46;
             this.label7.Text = "EVENT";
             // 
-            // textBox3
+            // EventTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(881, 193);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 32);
-            this.textBox3.TabIndex = 45;
+            this.EventTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EventTb.Location = new System.Drawing.Point(881, 193);
+            this.EventTb.Name = "EventTb";
+            this.EventTb.Size = new System.Drawing.Size(205, 32);
+            this.EventTb.TabIndex = 45;
             // 
             // label3
             // 
@@ -572,13 +574,13 @@
             this.label3.TabIndex = 44;
             this.label3.Text = "COW NAME";
             // 
-            // textBox2
+            // CowNameTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(647, 193);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 32);
-            this.textBox2.TabIndex = 43;
+            this.CowNameTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CowNameTb.Location = new System.Drawing.Point(647, 193);
+            this.CowNameTb.Name = "CowNameTb";
+            this.CowNameTb.Size = new System.Drawing.Size(205, 32);
+            this.CowNameTb.TabIndex = 43;
             // 
             // label2
             // 
@@ -598,47 +600,74 @@
             this.panel2.Size = new System.Drawing.Size(1018, 69);
             this.panel2.TabIndex = 40;
             // 
-            // comboBox1
+            // CowIDTb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(411, 193);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 32);
-            this.comboBox1.TabIndex = 64;
+            this.CowIDTb.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.CowIDTb.FormattingEnabled = true;
+            this.CowIDTb.Location = new System.Drawing.Point(411, 193);
+            this.CowIDTb.Name = "CowIDTb";
+            this.CowIDTb.Size = new System.Drawing.Size(200, 32);
+            this.CowIDTb.TabIndex = 64;
+            // 
+            // HDDate
+            // 
+            this.HDDate.CustomFormat = "yyyy-MM-dd";
+            this.HDDate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.HDDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.HDDate.Location = new System.Drawing.Point(1110, 314);
+            this.HDDate.Margin = new System.Windows.Forms.Padding(4);
+            this.HDDate.Name = "HDDate";
+            this.HDDate.Size = new System.Drawing.Size(233, 40);
+            this.HDDate.TabIndex = 66;
+            this.HDDate.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label12.Location = new System.Drawing.Point(1106, 277);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(67, 28);
+            this.label12.TabIndex = 65;
+            this.label12.Text = "Date";
             // 
             // Health
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1358, 805);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.HDDate);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.CowIDTb);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.HealthListTb);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.VetNameTb);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.CostTb);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.TreatmentTb);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.DiagnosisTb);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.EventTb);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.CowNameTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Health";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Health";
+            this.Load += new System.EventHandler(this.Health_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -663,7 +692,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HealthListTb)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -702,23 +731,25 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView HealthListTb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox VetNameTb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox CostTb;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TreatmentTb;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox DiagnosisTb;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox EventTb;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox CowNameTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CowIDTb;
+        private System.Windows.Forms.DateTimePicker HDDate;
+        private System.Windows.Forms.Label label12;
     }
 }
