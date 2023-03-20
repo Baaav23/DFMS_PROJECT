@@ -237,13 +237,36 @@ namespace DFMS_PROJECT
         }
         private void Filterincome()
         {
-            String Query = "Select * from IncomeTbl where IncDate='" + FInFilter.Value.Date.ToShortDateString() + "'";
+            String Query = "Select * from IncomeTbl where IncDate='" + FilterTb.Value.Date.ToShortDateString() + "'";
             IncomeListTb.DataSource = Con.GetData(Query);
         }
 
         private void FilterTb_ValueChanged(object sender, EventArgs e)
         {
             Filterincome();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (AmountTb.Text == "" || TypeTb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "insert into IncomeTbl values('" + IncomeDateTb.Value.Date.ToShortDateString() + "','" + TypeTb.SelectedItem.ToString() + "','" + Convert.ToInt32(AmountTb.Text) + "','" + Convert.ToInt32(EmpTemp.Text) + "')";
+                    Con.SetData(Query);
+                    showInc();
+                    ClearInc();
+                    MessageBox.Show("Income Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }

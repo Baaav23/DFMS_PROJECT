@@ -619,6 +619,7 @@
             this.button1.TabIndex = 96;
             this.button1.Text = "SAVE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TypeTb
             // 
@@ -739,7 +740,7 @@
             // IncRef
             // 
             this.IncRef.Image = ((System.Drawing.Image)(resources.GetObject("IncRef.Image")));
-            this.IncRef.Location = new System.Drawing.Point(836, 59);
+            this.IncRef.Location = new System.Drawing.Point(836, 51);
             this.IncRef.Margin = new System.Windows.Forms.Padding(4);
             this.IncRef.Name = "IncRef";
             this.IncRef.Size = new System.Drawing.Size(48, 41);
