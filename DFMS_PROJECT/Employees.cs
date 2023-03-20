@@ -112,5 +112,29 @@ namespace DFMS_PROJECT
                 }
             }
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Please Sellect a Employee!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "Delete from EmpTbl where EmpId = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    showEmployees();
+                    Clear();
+                    MessageBox.Show("Employee Deleted!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
