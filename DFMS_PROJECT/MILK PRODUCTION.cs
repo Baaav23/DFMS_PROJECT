@@ -189,5 +189,43 @@ namespace DFMS_PROJECT
         {
 
         }
+        private void Clear()
+        {
+            MDate.Value = DateTime.Today.Date;
+            CName.Text = "";
+            MAm.Text = "";
+            MNoon.Text = "";
+            MPm.Text = "";
+            MTotal.Text = "";
+            key = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (CName.Text == "" || CID.SelectedIndex == -1 || MAm.Text == "" || MNoon.Text == "" || MPm.Text == "" || MTotal.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "insert into MilkTbl values(" + CID.SelectedValue.ToString() + ",'" + CName.Text + "'," + Convert.ToInt32(MAm.Text) + "," + Convert.ToInt32(MNoon.Text) + "," + Convert.ToInt32(MPm.Text) + "," + Convert.ToInt32(MTotal.Text) + ", '" + MDate.Value.Date.ToShortDateString() + "')";
+                    Con.SetData(Query);
+                    showMilk();
+                    Clear();
+                    MessageBox.Show("Milk Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void CID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            getCowName();
+        }
     }
 }
