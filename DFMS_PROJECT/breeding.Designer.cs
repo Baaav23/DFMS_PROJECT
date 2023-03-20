@@ -439,9 +439,9 @@
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label13.Location = new System.Drawing.Point(729, 487);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(185, 44);
+            this.label13.Size = new System.Drawing.Size(200, 44);
             this.label13.TabIndex = 58;
-            this.label13.Text = "COW LIST";
+            this.label13.Text = "BREED LIST";
             // 
             // CowListTb
             // 
