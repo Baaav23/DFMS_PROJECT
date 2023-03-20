@@ -12,6 +12,8 @@ using Cow_Farm_System;
 using System.Collections;
 using System.Security.Cryptography;
 using System.Xml.Linq;
+using Bunifu.Framework.UI;
+using System.Management.Instrumentation;
 
 namespace DFMS_PROJECT
 {
@@ -41,11 +43,22 @@ namespace DFMS_PROJECT
 
         private void getCowName()
         {
-            string Query = "Select * from CowTbl where CowId=" + CID.SelectedValue + "";
+            string Query = "Select * from CowTbl where CowId=" + CowIDTb.SelectedValue + "";
             foreach (DataRow dr in Con.GetData(Query).Rows)
             {
                 CowNameTb.Text = dr["CowName"].ToString();
             }
+        }
+        private void Clear()
+        {
+            HDDate.Value = DateTime.Today.Date;
+            CowNameTb.Text = "";
+            VetNameTb.Text = "";
+            EventTb.Text = "";
+            TreatmentTb.Text = "";
+            DiagnosisTb.Text = "";
+            CostTb.Text = "";
+            key = 0;
         }
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
