@@ -1,5 +1,6 @@
 ﻿using Cow_Farm_System;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,22 @@ namespace DFMS_PROJECT
         public MilkSales()
         {
             InitializeComponent();
+            Con = new Functions();
+            getEmpId();
+            showSales();
+        }
+
+        private void getEmpId()
+        {
+            string Query = "Select EmpId from EmpTbl";
+            EID.ValueMember = "EmpId";
+            EID.DataSource = Con.GetData(Query);
+        }
+
+        private void showSales()
+        {
+            String Query = "Select * from MilkSalesTbl";
+            SList.DataSource = Con.GetData(Query);
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
