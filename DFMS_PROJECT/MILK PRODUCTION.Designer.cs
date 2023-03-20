@@ -418,6 +418,7 @@
             this.MilkListTb.RowTemplate.Height = 26;
             this.MilkListTb.Size = new System.Drawing.Size(951, 292);
             this.MilkListTb.TabIndex = 56;
+            this.MilkListTb.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MilkListTb_CellContentClick);
             // 
             // label1
             // 

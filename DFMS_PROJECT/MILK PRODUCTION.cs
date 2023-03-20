@@ -261,5 +261,24 @@ namespace DFMS_PROJECT
                 }
             }
         }
+
+        private void MilkListTb_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CID.SelectedValue = MilkListTb.SelectedRows[0].Cells[1].Value.ToString();
+            CName.Text = MilkListTb.SelectedRows[0].Cells[2].Value.ToString();
+            MAm.Text = MilkListTb.SelectedRows[0].Cells[3].Value.ToString();
+            MNoon.Text = MilkListTb.SelectedRows[0].Cells[4].Value.ToString();
+            MPm.Text = MilkListTb.SelectedRows[0].Cells[5].Value.ToString();
+            MTotal.Text = MilkListTb.SelectedRows[0].Cells[6].Value.ToString();
+            MDate.Text = MilkListTb.SelectedRows[0].Cells[7].Value.ToString();
+            if (CName.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(MilkListTb.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
