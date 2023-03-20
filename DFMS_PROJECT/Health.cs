@@ -251,5 +251,57 @@ namespace DFMS_PROJECT
         {
             Clear();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (CowNameTb.Text == "" || CowIDTb.SelectedIndex == -1 || EventTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "update HealthTbl set CowId='" + CowIDTb.SelectedValue.ToString() + "',CowName= '" + CowNameTb.Text + "',RepDate='" + HDDate.Value.Date.ToShortDateString() + "',Event='" + EventTb.Text + "',Diagnosis='" + DiagnosisTb.Text + "',Treatment='" + TreatmentTb.Text + "',Cost=" + CostTb.Text + ",VetName='" + VetNameTb.Text + "' where RepId=" + key + " ";
+                    Con.SetData(Query);
+                    showHealth();
+                    Clear();
+                    MessageBox.Show("Health Report Edited!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Please Sellect a Health Report!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "Delete from HealthTbl where RepId = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    showHealth();
+                    Clear();
+                    MessageBox.Show("Health Report Deleted!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void CowIDTb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            getCowName();
+        }
     }
 }

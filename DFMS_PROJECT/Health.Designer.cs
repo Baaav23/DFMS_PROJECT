@@ -401,6 +401,7 @@
             this.button3.TabIndex = 61;
             this.button3.Text = "DELETE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -413,6 +414,7 @@
             this.button2.TabIndex = 60;
             this.button2.Text = "EDIT";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -610,6 +612,7 @@
             this.CowIDTb.Name = "CowIDTb";
             this.CowIDTb.Size = new System.Drawing.Size(200, 32);
             this.CowIDTb.TabIndex = 64;
+            this.CowIDTb.SelectedIndexChanged += new System.EventHandler(this.CowIDTb_SelectedIndexChanged);
             // 
             // HDDate
             // 
