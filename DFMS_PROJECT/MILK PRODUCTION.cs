@@ -280,5 +280,29 @@ namespace DFMS_PROJECT
                 key = Convert.ToInt32(MilkListTb.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Please Sellect a Milk!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "Delete from MilkTbl where MId = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    showMilk();
+                    Clear();
+                    MessageBox.Show("Milk Deleted!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
