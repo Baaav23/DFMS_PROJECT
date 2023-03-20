@@ -385,6 +385,7 @@
             this.button1.TabIndex = 59;
             this.button1.Text = "SAVE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label13
             // 
@@ -432,6 +433,7 @@
             this.button4.TabIndex = 62;
             this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 

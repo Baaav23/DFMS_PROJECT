@@ -184,5 +184,55 @@ namespace DFMS_PROJECT
         {
 
         }
+        private void SaveIncome()
+        {
+            try
+            {
+                String type = "Sales";
+                String Query = "insert into IncomeTbl values('" + SDate.Value.Date.ToShortDateString() + "','" + type + "','" + Convert.ToInt32(STotal.Text) + "','" + Convert.ToInt32(EID.SelectedValue.ToString()) + "')";
+                Con.SetData(Query);
+                MessageBox.Show("Income Added!!!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void SQuantity_Leave(object sender, EventArgs e)
+        {
+            int total = Convert.ToInt32(SPrice.Text) * Convert.ToInt32(SQuantity.Text);
+            STotal.Text = total.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (SCName.Text == "" || EID.SelectedIndex == -1 || SPrice.Text == "" || SQuantity.Text == "" || STotal.Text == "" || SCPhone.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "insert into MilkSalesTbl values('" + SDate.Value.Date.ToShortDateString() + "'," + Convert.ToInt32(SPrice.Text) + ",'" + SCName.Text + "','" + SCPhone.Text + "'," + Convert.ToInt32(EID.SelectedValue.ToString()) + "," + Convert.ToInt32(SQuantity.Text) + ", " + Convert.ToInt32(STotal.Text) + ")";
+                    Con.SetData(Query);
+
+                    showSales();
+                    MessageBox.Show("Sales Added!!!");
+                    SaveIncome();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
