@@ -43,5 +43,28 @@ namespace DFMS_PROJECT
         {
 
         }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" /*|| EPass.Text == ""*/)
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "insert into EmpTbl values('" + EName.Text + "','" + EDate.Value.Date.ToShortDateString() + "','" + EGen.SelectedItem.ToString() + "','" + EPhon.Text + "', '" + EAdd.Text + "')";
+                    Con.SetData(Query);
+                    showEmployees();
+                    Clear();
+                    MessageBox.Show("Employee Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
