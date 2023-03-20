@@ -18,6 +18,8 @@ namespace DFMS_PROJECT
         public Employees()
         {
             InitializeComponent();
+            Con = new Functions();
+            showEmployees();
 
         }
         private void showEmployees()
