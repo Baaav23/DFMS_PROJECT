@@ -238,5 +238,28 @@ namespace DFMS_PROJECT
         {
             Clear();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (CowIdTb.SelectedIndex == -1 || CowNameTb.Text == "" || CowAgeTb.Text == "" || RemarkesTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "update BreedTbl set HeatDate='" + HeateDateTb.Value.Date.ToShortDateString() + "',BreedDate= '" + BreedDateTb.Value.Date.ToShortDateString() + "',CowId=" + Convert.ToInt32(CowIdTb.SelectedValue.ToString()) + ",CowName='" + CowNameTb.Text + "',PregDate='" + PregnancyDateTb.Value.Date.ToShortDateString() + "',ExpDateCalve='" + ExpectDateTb.Value.Date.ToShortDateString() + "',DateCalved='" + DateCalvedTb.Value.Date.ToShortDateString() + "',CowAge=" + Convert.ToInt32(CowAgeTb.Text) + ",Remarks='" + RemarkesTb.Text + "' where BrId=" + key + " ";
+                    Con.SetData(Query);
+                    showBreading();
+                    Clear();
+                    MessageBox.Show("Breading Edited!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
