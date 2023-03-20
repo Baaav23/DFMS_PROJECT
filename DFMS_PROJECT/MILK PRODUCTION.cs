@@ -1,20 +1,50 @@
-﻿using System;
+﻿using Cow_Farm_System;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace DFMS_PROJECT
 {
     public partial class MILK_PRODUCTION : Form
     {
+        Functions Con;
+        int key = 0;
         public MILK_PRODUCTION()
         {
             InitializeComponent();
+            Con = new Functions();
+            getCowId();
+            showMilk();
+        }
+        private void showMilk()
+        {
+            String Query = "Select * from MilkTbl";
+            MilkListTb.DataSource = Con.GetData(Query);
+        }
+
+        private void getCowId()
+        {
+            string Query = "Select CowId from CowTbl";
+            CID.ValueMember = "CowId";
+            CID.DataSource = Con.GetData(Query);
+        }
+
+        private void getCowName()
+        {
+            string Query = "Select * from CowTbl where CowId=" + CID.SelectedValue + "";
+            foreach (DataRow dr in Con.GetData(Query).Rows)
+            {
+                CName.Text = dr["CowName"].ToString();
+            }
         }
 
         private void MILK_PRODUCTION_Load(object sender, EventArgs e)
