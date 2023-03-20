@@ -41,11 +41,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.ExpectDateTb = new System.Windows.Forms.DateTimePicker();
+            this.DateCalvedTb = new System.Windows.Forms.DateTimePicker();
+            this.BreedDateTb = new System.Windows.Forms.DateTimePicker();
+            this.HeatDateTb = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -61,25 +60,26 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.RemarkesTb = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.CowListTb = new System.Windows.Forms.DataGridView();
+            this.PregnancyDateTb = new System.Windows.Forms.DateTimePicker();
             this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.CowAgeTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.CowNameTb = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.CowIdTb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -96,8 +96,7 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CowListTb)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox4
@@ -237,46 +236,38 @@
             this.label20.TabIndex = 96;
             this.label20.Text = "remarkes";
             // 
-            // dateTimePicker6
+            // ExpectDateTb
             // 
-            this.dateTimePicker6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker6.Location = new System.Drawing.Point(872, 157);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(200, 32);
-            this.dateTimePicker6.TabIndex = 94;
+            this.ExpectDateTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpectDateTb.Location = new System.Drawing.Point(643, 255);
+            this.ExpectDateTb.Name = "ExpectDateTb";
+            this.ExpectDateTb.Size = new System.Drawing.Size(200, 32);
+            this.ExpectDateTb.TabIndex = 93;
             // 
-            // dateTimePicker5
+            // DateCalvedTb
             // 
-            this.dateTimePicker5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker5.Location = new System.Drawing.Point(643, 255);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(200, 32);
-            this.dateTimePicker5.TabIndex = 93;
+            this.DateCalvedTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateCalvedTb.Location = new System.Drawing.Point(872, 255);
+            this.DateCalvedTb.Name = "DateCalvedTb";
+            this.DateCalvedTb.Size = new System.Drawing.Size(200, 32);
+            this.DateCalvedTb.TabIndex = 92;
+            this.DateCalvedTb.ValueChanged += new System.EventHandler(this.dateTimePicker4_ValueChanged);
             // 
-            // dateTimePicker4
+            // BreedDateTb
             // 
-            this.dateTimePicker4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker4.Location = new System.Drawing.Point(872, 255);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 32);
-            this.dateTimePicker4.TabIndex = 92;
-            this.dateTimePicker4.ValueChanged += new System.EventHandler(this.dateTimePicker4_ValueChanged);
+            this.BreedDateTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BreedDateTb.Location = new System.Drawing.Point(643, 157);
+            this.BreedDateTb.Name = "BreedDateTb";
+            this.BreedDateTb.Size = new System.Drawing.Size(200, 32);
+            this.BreedDateTb.TabIndex = 91;
             // 
-            // dateTimePicker3
+            // HeatDateTb
             // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(643, 157);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 32);
-            this.dateTimePicker3.TabIndex = 91;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(407, 157);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 32);
-            this.dateTimePicker2.TabIndex = 84;
+            this.HeatDateTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeatDateTb.Location = new System.Drawing.Point(407, 157);
+            this.HeatDateTb.Name = "HeatDateTb";
+            this.HeatDateTb.Size = new System.Drawing.Size(200, 32);
+            this.HeatDateTb.TabIndex = 84;
             // 
             // panel1
             // 
@@ -450,20 +441,20 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(458, 8);
+            this.label1.Location = new System.Drawing.Point(789, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 44);
             this.label1.TabIndex = 14;
             this.label1.Text = "DFSM";
             // 
-            // textBox1
+            // RemarkesTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(782, 317);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 53);
-            this.textBox1.TabIndex = 95;
+            this.RemarkesTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemarkesTb.Location = new System.Drawing.Point(782, 317);
+            this.RemarkesTb.Multiline = true;
+            this.RemarkesTb.Name = "RemarkesTb";
+            this.RemarkesTb.Size = new System.Drawing.Size(205, 53);
+            this.RemarkesTb.TabIndex = 95;
             // 
             // button3
             // 
@@ -500,6 +491,7 @@
             this.button1.TabIndex = 86;
             this.button1.Text = "SAVE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label13
             // 
@@ -513,24 +505,24 @@
             this.label13.TabIndex = 85;
             this.label13.Text = "COW LIST";
             // 
-            // dataGridView1
+            // CowListTb
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(355, 502);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(951, 292);
-            this.dataGridView1.TabIndex = 83;
+            this.CowListTb.BackgroundColor = System.Drawing.Color.White;
+            this.CowListTb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CowListTb.Location = new System.Drawing.Point(355, 502);
+            this.CowListTb.Name = "CowListTb";
+            this.CowListTb.RowHeadersWidth = 51;
+            this.CowListTb.RowTemplate.Height = 26;
+            this.CowListTb.Size = new System.Drawing.Size(951, 292);
+            this.CowListTb.TabIndex = 83;
             // 
-            // dateTimePicker1
+            // PregnancyDateTb
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(407, 256);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 32);
-            this.dateTimePicker1.TabIndex = 82;
+            this.PregnancyDateTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PregnancyDateTb.Location = new System.Drawing.Point(407, 256);
+            this.PregnancyDateTb.Name = "PregnancyDateTb";
+            this.PregnancyDateTb.Size = new System.Drawing.Size(200, 32);
+            this.PregnancyDateTb.TabIndex = 82;
             // 
             // button4
             // 
@@ -554,13 +546,13 @@
             this.label9.TabIndex = 81;
             this.label9.Text = "cow age";
             // 
-            // textBox5
+            // CowAgeTb
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(1101, 255);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(205, 32);
-            this.textBox5.TabIndex = 80;
+            this.CowAgeTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CowAgeTb.Location = new System.Drawing.Point(1101, 255);
+            this.CowAgeTb.Name = "CowAgeTb";
+            this.CowAgeTb.Size = new System.Drawing.Size(205, 32);
+            this.CowAgeTb.TabIndex = 80;
             // 
             // label10
             // 
@@ -602,13 +594,13 @@
             this.label8.TabIndex = 76;
             this.label8.Text = "COW NAME";
             // 
-            // textBox4
+            // CowNameTb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(1101, 157);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(205, 32);
-            this.textBox4.TabIndex = 75;
+            this.CowNameTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CowNameTb.Location = new System.Drawing.Point(1101, 157);
+            this.CowNameTb.Name = "CowNameTb";
+            this.CowNameTb.Size = new System.Drawing.Size(205, 32);
+            this.CowNameTb.TabIndex = 75;
             // 
             // label7
             // 
@@ -642,40 +634,49 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(332, -35);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1018, 69);
+            this.panel2.Size = new System.Drawing.Size(1018, 88);
             this.panel2.TabIndex = 71;
+            // 
+            // CowIdTb
+            // 
+            this.CowIdTb.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.CowIdTb.FormattingEnabled = true;
+            this.CowIdTb.Location = new System.Drawing.Point(872, 157);
+            this.CowIdTb.Name = "CowIdTb";
+            this.CowIdTb.Size = new System.Drawing.Size(200, 32);
+            this.CowIdTb.TabIndex = 97;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1340, 758);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CowIdTb);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.dateTimePicker6);
-            this.Controls.Add(this.dateTimePicker5);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.ExpectDateTb);
+            this.Controls.Add(this.DateCalvedTb);
+            this.Controls.Add(this.BreedDateTb);
+            this.Controls.Add(this.HeatDateTb);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.RemarkesTb);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.CowListTb);
+            this.Controls.Add(this.PregnancyDateTb);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.CowAgeTb);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.CowNameTb);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -708,9 +709,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CowListTb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -730,11 +729,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker ExpectDateTb;
+        private System.Windows.Forms.DateTimePicker DateCalvedTb;
+        private System.Windows.Forms.DateTimePicker BreedDateTb;
+        private System.Windows.Forms.DateTimePicker HeatDateTb;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -750,24 +748,25 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox RemarkesTb;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView CowListTb;
+        private System.Windows.Forms.DateTimePicker PregnancyDateTb;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox CowAgeTb;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox CowNameTb;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox CowIdTb;
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Cow_Farm_System;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,40 @@ namespace DFMS_PROJECT
 {
     public partial class Finance : Form
     {
+        Functions Con;
+        int key = 0;
         public Finance()
         {
             InitializeComponent();
+            Con = new Functions();
+            showExp();
+            showInc();
+        }
+        private void showExp()
+        {
+            String Query = "Select * from ExpenditureTbl";
+            ExpenListTb.DataSource = Con.GetData(Query);
+        }
+
+        private void showInc()
+        {
+            String Query = "Select * from IncomeTbl";
+            IncomeListTb.DataSource = Con.GetData(Query);
+        }
+        private void ClearExp()
+        {
+            PregnancyDateTb.Value = DateTime.Today.Date;
+            PerpuseTb.SelectedIndex = -1;
+            EventTb.Text = "";
+            key = 0;
+        }
+
+        private void ClearInc()
+        {
+            IncomeDateTb.Value = DateTime.Today.Date;
+            TypeTb.SelectedIndex = -1;
+            AmountTb.Text = "";
+            key = 0;
         }
 
         private void Finance_Load(object sender, EventArgs e)
@@ -167,6 +200,40 @@ namespace DFMS_PROJECT
             Dashboard Ob = new Dashboard();
             Ob.Show();
             this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (EventTb.Text == "" || PerpuseTb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "insert into ExpenditureTbl values('" + PregnancyDateTb.Value.Date.ToShortDateString() + "','" + PerpuseTb.SelectedItem.ToString() + "','" + Convert.ToInt32(EventTb.Text) + "','" + Convert.ToInt32(EmpTemp.Text) + "')";
+                    Con.SetData(Query);
+                    showExp();
+                    ClearExp();
+                    MessageBox.Show("Expenditure Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void ExRef_Click(object sender, EventArgs e)
+        {
+            showExp();
+        }
+
+        private void FExFilter_ValueChanged(object sender, EventArgs e)
+        {
+            String Query = "Select * from ExpenditureTbl where ExpDate='" + FExFilter.Value.Date.ToShortDateString() + "'";
+            ExpenListTb.DataSource = Con.GetData(Query);
         }
     }
 }
