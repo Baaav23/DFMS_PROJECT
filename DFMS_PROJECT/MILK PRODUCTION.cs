@@ -227,5 +227,16 @@ namespace DFMS_PROJECT
         {
             getCowName();
         }
+        private void MPm_Leave(object sender, EventArgs e)
+        {
+            int total = Convert.ToInt32(MAm.Text) + Convert.ToInt32(MNoon.Text) + Convert.ToInt32(MPm.Text);
+            MTotal.Text = total.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            Clear();
+        }
     }
 }
