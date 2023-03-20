@@ -23,6 +23,16 @@ namespace DFMS_PROJECT
             getEmpId();
             showSales();
         }
+        private void Clear()
+        {
+            SDate.Value = DateTime.Today.Date;
+            SCName.Text = "";
+            SCPhone.Text = "";
+            SPrice.Text = "";
+            SQuantity.Text = "";
+            STotal.Text = "";
+            key = 0;
+        }
 
         private void getEmpId()
         {
@@ -34,7 +44,7 @@ namespace DFMS_PROJECT
         private void showSales()
         {
             String Query = "Select * from MilkSalesTbl";
-            SList.DataSource = Con.GetData(Query);
+            SalesListTb.DataSource = Con.GetData(Query);
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
