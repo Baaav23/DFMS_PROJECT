@@ -84,5 +84,10 @@ namespace DFMS_PROJECT
                 key = Convert.ToInt32(EList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
