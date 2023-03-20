@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cow_Farm_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace DFMS_PROJECT
 {
     public partial class MilkSales : Form
     {
+        Functions Con;
+        int key = 0;
         public MilkSales()
         {
             InitializeComponent();
@@ -162,6 +165,11 @@ namespace DFMS_PROJECT
             Dashboard Ob = new Dashboard();
             Ob.Show();
             this.Hide();
+        }
+
+        private void MilkSales_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

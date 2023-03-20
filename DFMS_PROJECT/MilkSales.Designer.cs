@@ -53,27 +53,27 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.SalesListTb = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.EID = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.SDate = new System.Windows.Forms.DateTimePicker();
+            this.STotal = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SQuantity = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SCPhone = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.SCName = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.SPrice = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -90,7 +90,7 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesListTb)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -374,48 +374,12 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.White;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label19.Location = new System.Drawing.Point(841, 92);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(122, 27);
-            this.label19.TabIndex = 63;
-            this.label19.Text = "Milk Sales";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(886, 372);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 50);
-            this.button3.TabIndex = 61;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(734, 372);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 50);
-            this.button2.TabIndex = 60;
-            this.button2.Text = "EDIT";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(576, 372);
+            this.button1.Location = new System.Drawing.Point(691, 372);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 50);
             this.button1.TabIndex = 59;
@@ -434,24 +398,16 @@
             this.label13.TabIndex = 58;
             this.label13.Text = "Sales LIST";
             // 
-            // dataGridView1
+            // SalesListTb
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(364, 501);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(951, 292);
-            this.dataGridView1.TabIndex = 57;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(455, 185);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 32);
-            this.dateTimePicker1.TabIndex = 56;
+            this.SalesListTb.BackgroundColor = System.Drawing.Color.White;
+            this.SalesListTb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SalesListTb.Location = new System.Drawing.Point(364, 501);
+            this.SalesListTb.Name = "SalesListTb";
+            this.SalesListTb.RowHeadersWidth = 51;
+            this.SalesListTb.RowTemplate.Height = 26;
+            this.SalesListTb.Size = new System.Drawing.Size(951, 292);
+            this.SalesListTb.TabIndex = 57;
             // 
             // label1
             // 
@@ -470,112 +426,12 @@
             this.button4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1037, 372);
+            this.button4.Location = new System.Drawing.Point(834, 372);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(114, 50);
             this.button4.TabIndex = 62;
-            this.button4.Text = "UPDATE";
+            this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1065, 277);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 24);
-            this.label10.TabIndex = 53;
-            this.label10.Text = "Total";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(1069, 316);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(205, 32);
-            this.textBox6.TabIndex = 52;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(768, 274);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 24);
-            this.label11.TabIndex = 51;
-            this.label11.Text = "QUANTITY";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(772, 313);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(205, 32);
-            this.textBox7.TabIndex = 50;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(446, 149);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(59, 24);
-            this.label12.TabIndex = 49;
-            this.label12.Text = "DATE";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1065, 149);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 24);
-            this.label7.TabIndex = 46;
-            this.label7.Text = "CLIENT NAME";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(1074, 185);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 32);
-            this.textBox3.TabIndex = 45;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(768, 146);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 24);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Price";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(772, 185);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 32);
-            this.textBox2.TabIndex = 43;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(451, 274);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 24);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "CLIENT PHONE";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(455, 313);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 32);
-            this.textBox1.TabIndex = 41;
             // 
             // panel2
             // 
@@ -585,36 +441,200 @@
             this.panel2.Size = new System.Drawing.Size(1018, 69);
             this.panel2.TabIndex = 40;
             // 
+            // EID
+            // 
+            this.EID.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.EID.FormattingEnabled = true;
+            this.EID.Location = new System.Drawing.Point(340, 183);
+            this.EID.Margin = new System.Windows.Forms.Padding(4);
+            this.EID.Name = "EID";
+            this.EID.Size = new System.Drawing.Size(228, 40);
+            this.EID.TabIndex = 77;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.Location = new System.Drawing.Point(335, 145);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(159, 28);
+            this.label11.TabIndex = 76;
+            this.label11.Text = "Employee ID";
+            // 
+            // SDate
+            // 
+            this.SDate.CustomFormat = "yyyy-MM-dd";
+            this.SDate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.SDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.SDate.Location = new System.Drawing.Point(591, 188);
+            this.SDate.Margin = new System.Windows.Forms.Padding(4);
+            this.SDate.Name = "SDate";
+            this.SDate.Size = new System.Drawing.Size(233, 40);
+            this.SDate.TabIndex = 75;
+            this.SDate.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            // 
+            // STotal
+            // 
+            this.STotal.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.STotal.Location = new System.Drawing.Point(1050, 305);
+            this.STotal.Margin = new System.Windows.Forms.Padding(4);
+            this.STotal.Name = "STotal";
+            this.STotal.Size = new System.Drawing.Size(218, 40);
+            this.STotal.TabIndex = 74;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(1044, 268);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 28);
+            this.label2.TabIndex = 73;
+            this.label2.Text = "Total";
+            // 
+            // SQuantity
+            // 
+            this.SQuantity.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.SQuantity.Location = new System.Drawing.Point(691, 305);
+            this.SQuantity.Margin = new System.Windows.Forms.Padding(4);
+            this.SQuantity.Name = "SQuantity";
+            this.SQuantity.Size = new System.Drawing.Size(218, 40);
+            this.SQuantity.TabIndex = 72;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(686, 268);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 28);
+            this.label3.TabIndex = 71;
+            this.label3.Text = "Quantity";
+            // 
+            // SCPhone
+            // 
+            this.SCPhone.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.SCPhone.Location = new System.Drawing.Point(390, 299);
+            this.SCPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.SCPhone.Name = "SCPhone";
+            this.SCPhone.Size = new System.Drawing.Size(218, 40);
+            this.SCPhone.TabIndex = 70;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(384, 262);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(157, 28);
+            this.label7.TabIndex = 69;
+            this.label7.Text = "Client Phone";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label8.Location = new System.Drawing.Point(587, 151);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 28);
+            this.label8.TabIndex = 68;
+            this.label8.Text = "Date";
+            // 
+            // SCName
+            // 
+            this.SCName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.SCName.Location = new System.Drawing.Point(1138, 188);
+            this.SCName.Margin = new System.Windows.Forms.Padding(4);
+            this.SCName.Name = "SCName";
+            this.SCName.Size = new System.Drawing.Size(218, 40);
+            this.SCName.TabIndex = 67;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(1132, 151);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(158, 28);
+            this.label9.TabIndex = 66;
+            this.label9.Text = "Client Name";
+            // 
+            // SPrice
+            // 
+            this.SPrice.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.SPrice.Location = new System.Drawing.Point(886, 188);
+            this.SPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.SPrice.Name = "SPrice";
+            this.SPrice.Size = new System.Drawing.Size(218, 40);
+            this.SPrice.TabIndex = 65;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label12.Location = new System.Drawing.Point(881, 151);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(69, 28);
+            this.label12.TabIndex = 64;
+            this.label12.Text = "Price";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(750, 73);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(158, 37);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "Milk Sales";
+            // 
             // MilkSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1358, 805);
+            this.Controls.Add(this.EID);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.SDate);
+            this.Controls.Add(this.STotal);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.SQuantity);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.SCPhone);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.SCName);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.SPrice);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.SalesListTb);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MilkSales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MilkSales";
+            this.Load += new System.EventHandler(this.MilkSales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -639,7 +659,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesListTb)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -673,26 +693,26 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView SalesListTb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox EID;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker SDate;
+        private System.Windows.Forms.TextBox STotal;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox SQuantity;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox SCPhone;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox SCName;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox SPrice;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
     }
 }
