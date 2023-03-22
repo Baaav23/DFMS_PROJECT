@@ -692,6 +692,7 @@
             this.Name = "breeding";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "breeding";
+            this.Load += new System.EventHandler(this.breeding_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -307,5 +307,10 @@ namespace DFMS_PROJECT
                 key = Convert.ToInt32(CowListTb.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void breeding_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
