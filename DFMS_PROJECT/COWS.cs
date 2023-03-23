@@ -33,6 +33,12 @@ namespace DFMS_PROJECT
             String Query = "Select * from CowTbl";
             CowGV.DataSource = Con.GetData(Query);
         }
+        private void SearchCow()
+        {
+            String Query = "Select * from CowTbl where CowName like '%" + CFilter.Text + "%'";
+            CowGV.DataSource = Con.GetData(Query);
+        }
+
         private void Clear()
         {
             age = 0;
@@ -297,6 +303,16 @@ namespace DFMS_PROJECT
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void CFilter_TextChanged(object sender, EventArgs e)
+        {
+            SearchCow();
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

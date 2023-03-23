@@ -78,6 +78,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.CFilter = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CowGV)).BeginInit();
             this.panel3.SuspendLayout();
@@ -632,12 +634,37 @@
             this.label19.TabIndex = 38;
             this.label19.Text = "COW";
             // 
+            // CFilter
+            // 
+            this.CFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.CFilter.Location = new System.Drawing.Point(506, 443);
+            this.CFilter.Margin = new System.Windows.Forms.Padding(4);
+            this.CFilter.Name = "CFilter";
+            this.CFilter.Size = new System.Drawing.Size(218, 40);
+            this.CFilter.TabIndex = 40;
+            this.CFilter.TextChanged += new System.EventHandler(this.CFilter_TextChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label20.Location = new System.Drawing.Point(437, 450);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(66, 28);
+            this.label20.TabIndex = 39;
+            this.label20.Text = "Filter";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
+            // 
             // COWS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1358, 805);
+            this.Controls.Add(this.CFilter);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -750,5 +777,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox CFilter;
+        private System.Windows.Forms.Label label20;
     }
 }
