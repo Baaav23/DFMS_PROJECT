@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cow_Farm_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +13,55 @@ namespace DFMS_PROJECT
 {
     public partial class Dashboard : Form
     {
+        Functions Con;
+        int key = 0;
         public Dashboard()
         {
             InitializeComponent();
+            Con = new Functions();
+            FinanceCalc();
+            LogistecCalc();
+            getMax();
+        }
+        private void FinanceCalc()
+        {
+            int inc, exp;
+            double bal;
+            String Query = "Select sum(IncAmount) from IncomeTbl";
+            inc = Convert.ToInt32(Con.GetData(Query).Rows[0][0]);
+            FInc.Text = "$ " + inc.ToString();
+
+            String Query2 = "Select sum(ExpAmount) from ExpenditureTbl";
+            exp = Convert.ToInt32(Con.GetData(Query2).Rows[0][0]);
+            FExp.Text = "$ " + exp.ToString();
+
+            bal = inc - exp;
+            FBal.Text = "$ " + bal;
         }
 
+        private void LogistecCalc()
+        {
+            String Query = "Select count(*) from CowTbl";
+            LCow.Text = Con.GetData(Query).Rows[0][0].ToString();
+
+            String Query2 = "Select sum(TotalMilk) from MilkTbl";
+            LMilk.Text = Con.GetData(Query2).Rows[0][0].ToString() + " Litters";
+
+            String Query3 = "Select count(*) from EmpTbl";
+            LEmp.Text = Con.GetData(Query3).Rows[0][0].ToString();
+        }
+
+        private void getMax()
+        {
+            String Query = "Select Max(IncAmount) from IncomeTbl";
+            SMax.Text = "$ " + Con.GetData(Query).Rows[0][0].ToString();
+
+            String Query2 = "Select Max(ExpAmount) from ExpenditureTbl";
+            ExpMax.Text = "$ " + Con.GetData(Query2).Rows[0][0].ToString();
+        }
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            COWS Ob = new COWS();
-            Ob.Show();
-            this.Hide();
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -47,9 +87,7 @@ namespace DFMS_PROJECT
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-            MILK_PRODUCTION Ob = new MILK_PRODUCTION();
-            Ob.Show();
-            this.Hide();
+           
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -82,9 +120,7 @@ namespace DFMS_PROJECT
 
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
-            breeding Ob = new breeding();
-            Ob.Show();
-            this.Hide();
+            
         }
 
         private void label14_Click(object sender, EventArgs e)
@@ -110,9 +146,7 @@ namespace DFMS_PROJECT
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
-            MilkSales Ob = new MilkSales();
-            Ob.Show();
-            this.Hide();
+            
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -124,9 +158,7 @@ namespace DFMS_PROJECT
 
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
-            Finance Ob = new Finance();
-            Ob.Show();
-            this.Hide();
+
         }
 
         private void label16_Click(object sender, EventArgs e)
@@ -145,9 +177,7 @@ namespace DFMS_PROJECT
 
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
-            Dashboard Ob = new Dashboard();
-            Ob.Show();
-            this.Hide();
+            
         }
 
         private void label17_Click(object sender, EventArgs e)
@@ -170,6 +200,26 @@ namespace DFMS_PROJECT
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
