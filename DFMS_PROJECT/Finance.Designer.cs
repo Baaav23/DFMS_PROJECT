@@ -85,6 +85,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.EmpTemp = new System.Windows.Forms.Label();
+            this.EID = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -443,6 +445,7 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(937, 354);
             this.panel10.TabIndex = 93;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // ExRef
             // 
@@ -750,11 +753,37 @@
             this.EmpTemp.TabIndex = 99;
             this.EmpTemp.Text = "1";
             // 
+            // EID
+            // 
+            this.EID.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.EID.FormattingEnabled = true;
+            this.EID.Location = new System.Drawing.Point(1143, 73);
+            this.EID.Margin = new System.Windows.Forms.Padding(4);
+            this.EID.Name = "EID";
+            this.EID.Size = new System.Drawing.Size(130, 40);
+            this.EID.TabIndex = 101;
+            this.EID.SelectedIndexChanged += new System.EventHandler(this.EID_SelectedIndexChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label23.Location = new System.Drawing.Point(976, 80);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(159, 28);
+            this.label23.TabIndex = 100;
+            this.label23.Text = "Employee ID";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1340, 860);
+            this.Controls.Add(this.EID);
+            this.Controls.Add(this.label23);
             this.Controls.Add(this.EmpTemp);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
@@ -862,5 +891,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DateTimePicker FExFilter;
         private System.Windows.Forms.PictureBox IncRef;
+        private System.Windows.Forms.ComboBox EID;
+        private System.Windows.Forms.Label label23;
     }
 }

@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,13 @@ namespace DFMS_PROJECT
             Con = new Functions();
             showExp();
             showInc();
+            getEmpId();
+        }
+        private void getEmpId()
+        {
+            string Query = "Select EmpId from EmpTbl";
+            EID.ValueMember = "EmpId";
+            EID.DataSource = Con.GetData(Query);
         }
         private void showExp()
         {
@@ -261,6 +269,21 @@ namespace DFMS_PROJECT
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EID_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

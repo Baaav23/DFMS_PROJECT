@@ -470,7 +470,7 @@
             this.SDate.CustomFormat = "yyyy-MM-dd";
             this.SDate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.SDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.SDate.Location = new System.Drawing.Point(591, 188);
+            this.SDate.Location = new System.Drawing.Point(620, 180);
             this.SDate.Margin = new System.Windows.Forms.Padding(4);
             this.SDate.Name = "SDate";
             this.SDate.Size = new System.Drawing.Size(233, 40);
@@ -501,7 +501,7 @@
             // SQuantity
             // 
             this.SQuantity.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.SQuantity.Location = new System.Drawing.Point(691, 305);
+            this.SQuantity.Location = new System.Drawing.Point(730, 299);
             this.SQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.SQuantity.Name = "SQuantity";
             this.SQuantity.Size = new System.Drawing.Size(218, 40);
@@ -512,7 +512,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(686, 268);
+            this.label3.Location = new System.Drawing.Point(733, 267);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 28);
@@ -545,7 +545,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(587, 151);
+            this.label8.Location = new System.Drawing.Point(615, 151);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 28);
